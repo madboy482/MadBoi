@@ -425,10 +425,10 @@ def MadBoi_about_callback(update, context):
         query.message.edit_text(
             text=f"<b> ｢ Admin Permissions 」</b>"
             f"\nTo avoid slowing down, *{dispatcher.bot.first_name}* caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), *{dispatcher.bot.first_name}* will only find out ~10 minutes later."
-            f"\n\nIF you want to update them immediately, you can use the /admincache command,thta'll force *{dispatcher.bot.first_name}* to check who the admins are again and their permissions"
+            f"\n\nIF you want to update them immediately, you can use the /admincache command, that'll force *{dispatcher.bot.first_name}* to check who the admins are currently and their permissions."
             f"\n\nIf you are getting a message saying:"
-            f"\n<Code>You must be this chat administrator to perform this action!</code>"
-            f"\nThis has nothing to do with *{dispatcher.bot.first_name}*'s rights; this is all about YOUR permissions as an admin. *{dispatcher.bot.first_name}* respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with *{dispatcher.bot.first_name}*. Similarly, to change {dispatcher.bot.first_name} settings, you need to have the Change group info permission."
+            f"\n<code>You must be XYZ chat administrator to perform XYZ action!</code>"
+            f"\nThis has nothing to do with *{dispatcher.bot.first_name}*'s rights; this is all about YOUR Permissions as an admin. *{dispatcher.bot.first_name}* respects admin permissions; if you don't have the Ban Users permission as a telegram admin, you won't be able to ban users with *{dispatcher.bot.first_name}*. Similarly, to change *{dispatcher.bot.first_name}* settings, you need to have the Change group info permission."
             f"\n\nThe message very clearly says that you need these rights - <i>not *{dispatcher.bot.first_name}*.</i>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(

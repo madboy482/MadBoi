@@ -40,7 +40,6 @@ from MadBoi import (
     ALLOW_EXCL,
     BL_CHATS,
     CERT_PATH,
-    DONATION_LINK,
     LOGGER,
     OWNER_ID,
     PORT,
@@ -65,7 +64,7 @@ from MadBoi.modules.helper_funcs.misc import paginate_modules
 from MadBoi.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [ROMEO-3.0](https://telegra.ph/file/6e56d68f855cff91245e1.png)
+Hello there, I'm [ROMEO-3.0](https://telegra.ph/file/90e0bceeaf40b4a16f672.jpg)
 I am a Superb Group Management Bot.
 ✪ Make sure you read *INFO* Section Below ✪ 
 """
@@ -87,10 +86,9 @@ buttons = [
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [GRAND OFFICIAL](https://telegra.ph/file/4a14aa91d2276be702ae7.jpg)
+*Main Commands :* [ROMEO-3.0](https://telegra.ph/file/90e0bceeaf40b4a16f672.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
-✪ /donate: You can support my creater using this command.
 ✪ /settings: 
    ◔ in PM: will send you your settings for all supported modules.
    ◔ in a Group: will redirect you to pm, with all that chat's settings.
@@ -98,11 +96,6 @@ HELP_STRINGS = f"""
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
-
-
-DONATE_STRING = """Heya, glad to hear you want to donate!
-You can donate to the original writer's of the Base code,
-Support them  [N](t.me/teamishere,[MadBoi BOT](t.me/teamishere),"""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -222,7 +215,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+            "Yuuss, I'm Online!😉😉\n<b>Haven't slept since:👀 </b> <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
@@ -358,10 +351,11 @@ def MadBoi_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You I'm a next generational group management bot developed by @MadBoiX22.* "
-            f"\n\n 🔥 Join [GRAND OFFICIAL](https://t.me/teamishere) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
-            f"\n\n I have the normal GROUP MANAGING functions like flood control, a warning system etc but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI Can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/11de6b6641f5f5d5b344d.jpg)"
+            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You know I'm a next Generation Group Moderator..*"
+            f"\n🧑‍💻 DEVELOPER 🧑‍💻 *-->* @Warning_MadBoy_is_Here"
+            f"\n\n🔥 Join [Romeo Support](https://t.me/Romeo_JulietBotSupport) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            f"\n\nI have the normal GROUP MANAGING functions like flood control, A Warning System etc., but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
+            f"\n\nI can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/11de6b6641f5f5d5b344d.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -780,25 +774,6 @@ def is_chat_allowed(update, context):
         pass
 
 
-@run_async
-def donate(update: Update, context: CallbackContext):
-    update.effective_message.from_user
-    chat = update.effective_chat  # type: Optional[Chat]
-    context.bot
-    if chat.type == "private":
-        update.effective_message.reply_text(
-            DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
-        )
-        update.effective_message.reply_text(
-            "You can also donate to the person currently running me "
-            "[here]({})".format(DONATION_LINK),
-            parse_mode=ParseMode.MARKDOWN,
-        )
-
-    else:
-        pass
-
-
 def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
@@ -824,8 +799,6 @@ def main():
         MadBoi_about_callback, pattern=r"aboutmanu_"
     )
 
-    donate_handler = CommandHandler("donate", donate)
-
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
     is_chat_allowed_handler = MessageHandler(Filters.group, is_chat_allowed)
 
@@ -838,7 +811,6 @@ def main():
     dispatcher.add_handler(settings_callback_handler)
     dispatcher.add_handler(migrate_handler)
     dispatcher.add_handler(is_chat_allowed_handler)
-    dispatcher.add_handler(donate_handler)
 
     dispatcher.add_error_handler(error_handler)
 

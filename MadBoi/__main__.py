@@ -190,7 +190,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="«« Back", callback_data="help_back")]]
                     ),
                 )
 
@@ -298,7 +298,7 @@ def help_button(update, context):
                 text=text,
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="«« Back", callback_data="help_back")]]
                 ),
             )
 
@@ -351,9 +351,9 @@ def MadBoi_about_callback(update, context):
     query = update.callback_query
     if query.data == "aboutmanu_":
         query.message.edit_text(
-            text=f"*😍 Hi again!  The name's {dispatcher.bot.first_name} 😍 \n\nAs  You know I'm a next Generation Group Moderator..*"
+            text=f"*😍 Hi again!  The name's *{dispatcher.bot.first_name}* 😍 \n\nAs  You know I'm a next Generation Group Moderator..*"
             f"\n🧑‍💻 DEVELOPER 🧑‍💻 *-->* @Warning_MadBoy_is_Here"
-            f"\n\n🔥 Join [Romeo Support](https://t.me/Romeo_JulietBotSupport) To Keep Yourself Updated About {dispatcher.bot.first_name} 🔥"
+            f"\n\n🔥 Join [Romeo Support](https://t.me/Romeo_JulietBotSupport) To Keep Yourself Updated About *{dispatcher.bot.first_name}* 🔥"
             f"\n\nI have the normal GROUP MANAGING functions like flood control, A Warning System etc., but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/11de6b6641f5f5d5b344d.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
@@ -374,7 +374,7 @@ def MadBoi_about_callback(update, context):
                             text="❔Help & Commands", callback_data="help_back"
                         )
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
+                    [InlineKeyboardButton(text="«« Back", callback_data="aboutmanu_back")],
                 ]
             ),
         )
@@ -389,8 +389,8 @@ def MadBoi_about_callback(update, context):
     elif query.data == "aboutmanu_howto":
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
-            f"\nIf You Can Also Add {dispatcher.bot.first_name} To Your Chats By Clicking [Here](http://t.me/{dispatcher.bot.username}?startgroup=true) And Selecting Chat. \n"
-            f"\n\nYou Can get support {dispatcher.bot.first_name} by joining [support](https://t.me/teamishere).\n"
+            f"\nYou can also Add *{dispatcher.bot.first_name}* To Your Chats By Clicking *[HERE](http://t.me/{dispatcher.bot.username}?startgroup=true)* And Selecting Chat.✅ \n"
+            f"\n\nYou can get support *{dispatcher.bot.first_name}* by joining *[SUPPORT](https://t.me/Romeo_JulietBot_Support)*.✅\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -404,35 +404,35 @@ def MadBoi_about_callback(update, context):
                             text="Anti Spam", callback_data="aboutmanu_spamprot"
                         ),
                     ],
-                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_")],
+                    [InlineKeyboardButton(text="«« Back", callback_data="aboutmanu_")],
                 ]
             ),
         )
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [MadBoi X](https://github.com/MadBoiXOP)."
-            f"\n\n{dispatcher.bot.first_name}'s source code was rewritten by @MadBoiX22 and @PROBOYX"
-            f"\n\nIf Any Question About {dispatcher.bot.first_name}, \nLet Us Know At @{SUPPORT_CHAT}.",
+            f"\n\nBased on [MadBoy](https://github.com/madboy482)."
+            f"\n\n*{dispatcher.bot.first_name}*'s source code was rewritten by @Warning_MadBoy_is_Here."
+            f"\n\nIf Any Question About *{dispatcher.bot.first_name}*, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_tac")]]
+                [[InlineKeyboardButton(text="«« Back", callback_data="aboutmanu_tac")]]
             ),
         )
 
     elif query.data == "aboutmanu_permis":
         query.message.edit_text(
             text=f"<b> ｢ Admin Permissions 」</b>"
-            f"\nTo avoid slowing down, {dispatcher.bot.first_name} caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), {dispatcher.bot.first_name} will only find out ~10 minutes later."
-            f"\n\nIF you want to update them immediately, you can use the /admincache command,thta'll force {dispatcher.bot.first_name} to check who the admins are again and their permissions"
+            f"\nTo avoid slowing down, *{dispatcher.bot.first_name}* caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), *{dispatcher.bot.first_name}* will only find out ~10 minutes later."
+            f"\n\nIF you want to update them immediately, you can use the /admincache command,thta'll force *{dispatcher.bot.first_name}* to check who the admins are again and their permissions"
             f"\n\nIf you are getting a message saying:"
             f"\n<Code>You must be this chat administrator to perform this action!</code>"
-            f"\nThis has nothing to do with {dispatcher.bot.first_name}'s rights; this is all about YOUR permissions as an admin. {dispatcher.bot.first_name} respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with {dispatcher.bot.first_name}. Similarly, to change {dispatcher.bot.first_name} settings, you need to have the Change group info permission."
-            f"\n\nThe message very clearly says that you need these rights - <i>not {dispatcher.bot.first_name}.</i>",
+            f"\nThis has nothing to do with *{dispatcher.bot.first_name}*'s rights; this is all about YOUR permissions as an admin. *{dispatcher.bot.first_name}* respects admin permissions; if you do not have the Ban Users permission as a telegram admin, you won't be able to ban users with *{dispatcher.bot.first_name}*. Similarly, to change {dispatcher.bot.first_name} settings, you need to have the Change group info permission."
+            f"\n\nThe message very clearly says that you need these rights - <i>not *{dispatcher.bot.first_name}*.</i>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto")]]
+                [[InlineKeyboardButton(text="«« Back", callback_data="aboutmanu_howto")]]
             ),
         )
     elif query.data == "aboutmanu_spamprot":
@@ -461,7 +461,7 @@ def MadBoi_about_callback(update, context):
             "\n_ A button gets added to the welcome message for them to unmute themselves. This proves they aren't a bot! soft - restricts users ability to post media for 24 hours. strong - mutes on join until they prove they're not bots._",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="aboutmanu_howto")]]
+                [[InlineKeyboardButton(text="«« Back", callback_data="aboutmanu_howto")]]
             ),
         )
     elif query.data == "aboutmanu_tac":
@@ -484,7 +484,7 @@ def MadBoi_about_callback(update, context):
                         InlineKeyboardButton(
                             text="Credits", callback_data="aboutmanu_credit"
                         ),
-                        InlineKeyboardButton(text="Back", callback_data="aboutmanu_"),
+                        InlineKeyboardButton(text="«« Back", callback_data="aboutmanu_"),
                     ]
                 ]
             ),
@@ -551,7 +551,7 @@ def get_help(update, context):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="«« Back", callback_data="help_back")]]
             ),
         )
 
@@ -623,7 +623,7 @@ def settings_button(update, context):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Back",
+                                text="«« Back",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]

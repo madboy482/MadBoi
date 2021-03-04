@@ -424,12 +424,12 @@ def MadBoi_about_callback(update, context):
     elif query.data == "aboutmanu_permis":
         query.message.edit_text(
             text=f"<b> ｢ Admin Permissions 」</b>"
-            f"\nTo avoid slowing down, *{dispatcher.bot.first_name}* caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), *{dispatcher.bot.first_name}* will only find out ~10 minutes later."
-            f"\n\nIF you want to update them immediately, you can use the /admincache command, that'll force *{dispatcher.bot.first_name}* to check who the admins are currently and their permissions."
+            f"\nTo avoid slowing down, <b>{dispatcher.bot.first_name}</b> caches admin rights for each user. This cache lasts about 10 minutes; this may change in the future. This means that if you promote a user manually (without using the /promote command), <b>{dispatcher.bot.first_name}</b> will only find out ~10 minutes later."
+            f"\n\nIF you want to update them immediately, you can use the /admincache command, that'll force <b>{dispatcher.bot.first_name}</b> to check who the admins are currently and their permissions."
             f"\n\nIf you are getting a message saying:"
             f"\n<code>You must be XYZ chat administrator to perform XYZ action!</code>"
-            f"\nThis has nothing to do with *{dispatcher.bot.first_name}*'s rights; this is all about YOUR Permissions as an admin. *{dispatcher.bot.first_name}* respects admin permissions; if you don't have the Ban Users permission as a telegram admin, you won't be able to ban users with *{dispatcher.bot.first_name}*. Similarly, to change *{dispatcher.bot.first_name}* settings, you need to have the Change group info permission."
-            f"\n\nThe message very clearly says that you need these rights - <i>not *{dispatcher.bot.first_name}*.</i>",
+            f"\n<i>This has nothing to do with <b>{dispatcher.bot.first_name}</b>'s rights; this is all about YOUR Permissions as an admin. <b>{dispatcher.bot.first_name}</b> respects admin permissions; if you don't have the Ban Users permission as a telegram admin, you won't be able to ban users with <b>{dispatcher.bot.first_name}</b>. Similarly, to change <b>{dispatcher.bot.first_name}</b> settings, you need to have the Change group info permission.</i>"
+            f"\n\nThe message very clearly says that you need these rights - <i>not <b>{dispatcher.bot.first_name}</b>.</i>",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="«« Back", callback_data="aboutmanu_howto")]]
@@ -438,27 +438,29 @@ def MadBoi_about_callback(update, context):
     elif query.data == "aboutmanu_spamprot":
         query.message.edit_text(
             text="* ｢ Anti-Spam Settings 」*"
-            "\n- /antispam <on/off/yes/no>: Change antispam security settings in the group, or return your current settings(when no arguments)."
+            "\n➥ /antispam <on/off/yes/no>: Change antispam security settings in the group, or return your current settings (when no arguments)."
             "\n_This helps protect you and your groups by removing spam flooders as quickly as possible._"
-            "\n\n- /setflood <int/'no'/'off'>: enables or disables flood control"
-            "\n- /setfloodmode <ban/kick/mute/tban/tmute> <value>: Action to perform when user have exceeded flood limit. ban/kick/mute/tmute/tban"
-            "\n_Antiflood allows you to take action on users that send more than x messages in a row. Exceeding the set flood will result in restricting that user._"
-            "\n\n- /addblacklist <triggers>: Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers."
+            "\n\n➥ /setflood <int/'no'/'off'>: enables or disables flood control"
+            "\n➥ /setfloodmode <ban/kick/mute/tban/tmute> <value>: Action to perform when user have exceeded flood limit. ban/kick/mute/tmute/tban"
+            "\n_Antiflood allows you to take action on users that send more than X messages in a row. Exceeding the set flood will result in restricting that user._"
+            "\n\n➥ /addblacklist <triggers>: Add a trigger to the blacklist. Each line is considered one trigger, so using different lines will allow you to add multiple triggers."
             "\n- /blacklistmode <off/del/warn/ban/kick/mute/tban/tmute>: Action to perform when someone sends blacklisted words."
             "\n_Blacklists are used to stop certain triggers from being said in a group. Any time the trigger is mentioned, the message will immediately be deleted. A good combo is sometimes to pair this up with warn filters!_"
-            "\n\n- /reports <on/off>: Change report setting, or view current status."
+            "\n\n➥ /reports <on/off>: Change report setting, or view current status."
             "\n • If done in pm, toggles your status."
             "\n • If in chat, toggles that chat's status."
             "\n_If someone in your group thinks someone needs reporting, they now have an easy way to call all admins._"
-            "\n\n- /lock <type>: Lock items of a certain type (not available in private)"
-            "\n- /locktypes: Lists all possible locktypes"
+            "\n\n➥ /lock <type>: Lock items of a certain type (not available in private)"
+            "\n➥ /locktypes: Lists all possible locktypes"
             "\n_The locks module allows you to lock away some common items in the telegram world; the bot will automatically delete them!_"
-            '\n\n- /addwarn <keyword> <reply message>: Sets a warning filter on a certain keyword. If you want your keyword to be a sentence, encompass it with quotes, as such: /addwarn "very angry" This is an angry user. '
-            "\n- /warn <userhandle>: Warns a user. After 3 warns, the user will be banned from the group. Can also be used as a reply."
-            "\n- /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just kick."
+            '\n\n➥ /addwarn <keyword> <reply message>: Sets a warning filter on a certain keyword. If you want your keyword to be a sentence, encompass it with quotes, as such: /addwarn "very angry" This is an angry user. '
+            "\n➥ /warn <userhandle>: Warns a user. After 3 warns, the user will be banned from the group. Can also be used as a reply."
+            "\n➥ /strongwarn <on/yes/off/no>: If set to on, exceeding the warn limit will result in a ban. Else, will just kick."
             "\n_If you're looking for a way to automatically warn users when they say certain things, use the /addwarn command._"
-            "\n\n- /welcomemute <off/soft/strong>: All users that join, get muted"
-            "\n_ A button gets added to the welcome message for them to unmute themselves. This proves they aren't a bot! soft - restricts users ability to post media for 24 hours. strong - mutes on join until they prove they're not bots._",
+            "\n\n➥ /welcomemute <off/soft/strong>: All users that join, get muted"
+            "\n_A button gets added to the welcome message for them to unmute themselves. This proves they aren't a bot!"
+            "\n_• soft - restricts users ability to post media for 24 hours._"
+            "\n_• strong - mutes on join until they prove they're not bots._",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [[InlineKeyboardButton(text="«« Back", callback_data="aboutmanu_howto")]]
@@ -468,15 +470,15 @@ def MadBoi_about_callback(update, context):
         query.message.edit_text(
             text=f"<b> ｢ Terms and Conditions 」</b>\n"
             f"\n<i>To Use This Bot, You Need To Read Terms and Conditions Carefully.</i>\n"
-            f"\n✪ We always respect your privacy \n  We never log into bot's api and spying on you \n  We use a encripted database \n  Bot will automatically stops if someone logged in with api."
-            f"\n✪ Always try to keep credits, so \n  This hardwork is done by @MadBoiX22 spending many sleepless nights.. So, Respect it."
-            f"\n✪ Some modules in this bot is owned by different authors, So, \n  All credits goes to them \n  Also for <b>Paul Larson for Marie</b>."
-            f"\n✪ If you need to ask anything about \n  this bot, Go @{SUPPORT_CHAT}."
-            f"\n✪ If you asking nonsense in Support \n  Chat, you will get warned/banned."
-            f"\n✪ All api's we used owned by originnal authors \n  Some api's we use Free version \n  Please don't overuse AI Chat."
-            f"\n✪ We don't Provide any support to forks,\n  So these terms and conditions not applied to forks \n  If you are using a fork of MadBoiBot we are not resposible for anything."
+            f"\n✪ We always respect your privacy \n  ➥ We never log into bot's API and spy on you. \n  ➥ We use a encrypted database. \n  ➥ Bot will automatically stop if someone logged in with API."
+            f"\n✪ Always try to keep credits, \n  ➥ This hardwork is done by @Warning_MadBoy_is_Here spending many sleepless nights.. So, Respect it..."
+            f"\n✪ Some modules in this bot is owned by different authors, \n ➥ So, All credits goes to them \n  ➥ Also to <b>Paul Larson for Marie</b>."
+            f"\n✪ If you need to ask anything about this bot, Join @{SUPPORT_CHAT}."
+            f"\n✪ If you asking nonsense in Support Chat, you will get warned/banned or may be g-banned."
+            f"\n✪ All API's we use are owned by originnal authors \n  ➥ Some API's we use are Free Version \n  ➥ Please don't overuse AI Chat.."
+            f"\n✪ We don't Provide any support to forks,\n  ➥ So these terms and conditions not applied to forks \n  ➥ If you are using a fork of <b>Romeo-3.0</b> we aren't responssible for anything."
             f"\n\nFor any kind of help, related to this bot, Join @{SUPPORT_CHAT}."
-            f"\n\n<i>Terms & Conditions will be changed anytime</i>\n",
+            f"\n\n<i>Terms & Conditions might be changed anytime, so check it out on regular basis...</i>\n",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
@@ -584,7 +586,7 @@ def send_settings(chat_id, user_id, user=False):
             chat_name = dispatcher.bot.getChat(chat_id).title
             dispatcher.bot.send_message(
                 user_id,
-                text="Which module would you like to check {}'s settings for?".format(
+                text="Which module would you like to check *{}*'s settings for?".format(
                     chat_name
                 ),
                 reply_markup=InlineKeyboardMarkup(
@@ -636,7 +638,7 @@ def settings_button(update, context):
             curr_page = int(prev_match.group(2))
             chat = context.bot.get_chat(chat_id)
             query.message.edit_text(
-                "Hi there! There are quite a few settings for *{}* - go ahead and pick what "
+                "Hi there! There are quite a few settings for *{}* - Go ahead and Pick what "
                 "you're interested in.".format(chat.title),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -651,7 +653,7 @@ def settings_button(update, context):
             next_page = int(next_match.group(2))
             chat = context.bot.get_chat(chat_id)
             query.message.edit_text(
-                "Hi there! There are quite a few settings for *{}* - go ahead and pick what "
+                "Hi there! There are quite a few settings for *{}* - Go ahead and Pick what "
                 "you're interested in.".format(chat.title),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -665,7 +667,7 @@ def settings_button(update, context):
             chat_id = back_match.group(1)
             chat = context.bot.get_chat(chat_id)
             query.message.edit_text(
-                text="Hi there! There are quite a few settings for *{}* - go ahead and pick what "
+                text="Hi there! There are quite a few settings for *{}* - Go ahead and Pick what "
                 "you're interested in.".format(escape_markdown(chat.title)),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(
@@ -778,10 +780,10 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online!!!😎😎")
         except Unauthorized:
             LOGGER.warning(
-                "Bot isnt able to send message to support_chat, go and check!"
+                "Bot isn't able to send message to support_chat, Go and Check!!"
             )
         except BadRequest as e:
             LOGGER.warning(e.message)
@@ -828,8 +830,8 @@ def main():
         LOGGER.info("Using long polling.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
-    if MadBoiX == 1100231654:
-         print ("MadBoiX ADDED SIR ")
+    if MadBoiX == 1078841825:
+         print ("Warning_MadBoy_is_Here ADDED SIR...")
     else:
          os.execl(sys.executable, sys.executable, *sys.argv)
          telethn.disconnect()

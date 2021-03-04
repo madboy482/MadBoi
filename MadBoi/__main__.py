@@ -67,7 +67,7 @@ from MadBoi.modules.helper_funcs.readable_time import get_readable_time
 PM_START_TEXT = """
 Hello there, I'm [ROMEO-3.0](https://telegra.ph/file/6e56d68f855cff91245e1.png)
 I am a Superb Group Management Bot.
-✪ Make sure you read *HELP* Section Below ✪ 
+✪ Make sure you read *INFO* Section Below ✪ 
 """
 
 buttons = [
@@ -79,8 +79,8 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add MadBoi BOT to your group 💫",
-            url="t.me/grand50_bot?startgroup=true",
+            text="💫 Invite Romeo-3.0 to your Group 💫",
+            url="t.me/Romeo3_Bot?startgroup=true",
         ),
     ],
 ]

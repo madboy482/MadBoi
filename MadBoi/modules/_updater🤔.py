@@ -31,14 +31,14 @@
 
 
 
-from LEGEND.events import register
+from MadBoi.events import register
 from os import remove, execle, path, environ
 import asyncio
 import sys
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 import heroku3
-from LEGEND import OWNER_ID, telethn as update
+from MadBoi import OWNER_ID, telethn as update
 
 
 UPSTREAM_REPO_URL = "https://github.com/madboy482/MadBoi"
@@ -212,6 +212,6 @@ async def upstream(ups):
             repo.git.reset("--hard", "FETCH_HEAD")
         reqs_upgrade = await updateme_requirements()
         await lol.edit("`Successfully Updated!\n" "Restarting.......`")
-        args = [sys.executable, "-m", "LEGEND"]
+        args = [sys.executable, "-m", "MadBoi"]
         execle(sys.executable, *args, environ)
         return

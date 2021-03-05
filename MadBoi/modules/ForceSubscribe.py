@@ -103,7 +103,7 @@ def _check_member(client, message):
         if (
             not client.get_chat_member(chat_id, user_id).status
             in ("administrator", "creator")
-            and not user_id == LEGENDX
+            and not user_id == MadBoi
         ):
             channel = chat_db.channel
             try:
@@ -143,7 +143,7 @@ def _check_member(client, message):
 @pbot.on_message(filters.command(["forcesubscribe", "fsub"]) & ~filters.private)
 def config(client, message):
     user = client.get_chat_member(message.chat.id, message.from_user.id)
-    if user.status is "creator" or user.user.id in SUDO_USERS or user.user.id == LEGENDX:
+    if user.status is "creator" or user.user.id in SUDO_USERS or user.user.id == MadBoi:
         chat_id = message.chat.id
         if len(message.command) > 1:
             input_str = message.command[1]

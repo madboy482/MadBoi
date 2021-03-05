@@ -1,6 +1,5 @@
 #    Copyright (C) 2020-2021 by @LEGENDX22
 
-
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -13,6 +12,14 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+#    Don't dare to remove the credits, else be ready for DMCA.
+#    Changed some texts for ROMEO-3.0
+
+#    Credits to :-
+     ➥ LEGENDX
+     ➥ PROBOY
+     ➥ MADBOY
+    
 
 import logging
 import time
@@ -206,7 +213,7 @@ Note: Only creator of the group can setup me and I will not allow force subscrib
 
 Note: /FSub is a ROMEO-3.0 of /ForceSubscribe
 
-💭 Available only in Romeo-3.0. 
+💭 Available only in Romeo-3.0 after GRAND OFFICIAL. 
  
 """
 __mod_name__ = "📢 Force Subscribe 💭"

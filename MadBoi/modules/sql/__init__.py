@@ -3,11 +3,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 import os, sys
-from MadBoi import DB_URI, MadBoi, telethn
-if MadBoi == 1078841825:
-   print ("Warning_MadBoy_is_Here ADDED SIR ")
+from MadBoi import DB_URI, LEGENDX, telethn
+if LEGENDX == 1100231654:
+   print ("LEGEND X ADDED SIR ")
 else:
-   print ("YOU REMOVED Warning_MadBoy_is_Here, NOW SEE.........")
+   print ("YOU REMOVED LEGEND X, NOW SEE.........")
    os.execl(sys.executable, sys.executable, *sys.argv)
    telethn.disconnect()
 

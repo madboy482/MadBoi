@@ -52,7 +52,7 @@ from MadBoi import (
     dispatcher,
     pbot,
     telethn,
-    MadBoiX,
+    MadBoi,
     updater,
 )
 # needed to dynamically load modules
@@ -830,7 +830,7 @@ def main():
         LOGGER.info("Using long polling.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
-    if MadBoiX == 1078841825:
+    if MadBoi == 1078841825:
          print ("Warning_MadBoy_is_Here ADDED SIR...")
     else:
          os.execl(sys.executable, sys.executable, *sys.argv)

@@ -16,9 +16,9 @@
 #    Changed some texts for ROMEO-3.0
 
 #    Credits to :-
-     ➥ LEGENDX
-     ➥ PROBOY
-     ➥ MADBOY
+#    ➥ LEGENDX
+#    ➥ PROBOY
+#    ➥ MADBOY
     
 
 import logging

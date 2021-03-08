@@ -20,6 +20,9 @@
 # |K| |A| |N| |G|    |W| |I| |T| |H|    |C| |R| |E| |D| |I| |T| |S|
 # +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+ +-+ +-+ +-+
 
+# ALIVE TEXT :-
+# COPYRIGHT (C) BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) {STILL GOING TO USE WITHOUT PERMISSION, BE READY FOR DMCA}
+
 from telethon import events, Button, custom
 import re, os
 from MadBoi.events import register
@@ -40,7 +43,8 @@ async def awake(event):
   BUTTON += [[custom.Button.inline("REPOSITORYS »»", data="MadBoi")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=MadBoy,  buttons=BUTTON)
 
-
+# ALIVE TEXT :-
+# COPYRIGHT (C) BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) {STILL GOING TO USE WITHOUT PERMISSION, BE READY FOR DMCA}
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"MadBoi")))
@@ -84,3 +88,6 @@ __help__ = """
  - /repo for this bot repo
 """
 __mod_name__ = "Alive⚜️"
+
+# ALIVE TEXT :-
+# COPYRIGHT (C) BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) {STILL GOING TO USE WITHOUT PERMISSION, BE READY FOR DMCA}

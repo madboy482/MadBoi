@@ -20,16 +20,17 @@
 # |K| |A| |N| |G|    |W| |I| |T| |H|    |C| |R| |E| |D| |I| |T| |S|
 # +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+ +-+ +-+ +-+
 
-# ALIVE TEXT :-
-# COPYRIGHT (C) BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) {STILL GOING TO USE WITHOUT PERMISSION, BE READY FOR DMCA}
+# ALIVE AND REPOSITORYS TEXT :-
+# COPYRIGHT (C) 2021 BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) 
+# {STILL GOING TO USE WITHOUT PERMISSION, BE READY FOR DMCA}
 
 from telethon import events, Button, custom
 import re, os
 from MadBoi.events import register
 from MadBoi import telethn as tbot
 from MadBoi import telethn as tgbot
-PHOTO = "https://telegra.ph/file/90e0bceeaf40b4a16f672.jpg"
-@register(pattern=("/alive"))
+ROMEOv3 = "https://telegra.ph/file/90e0bceeaf40b4a16f672.jpg"
+@register(pattern=("/alive|#alive"))
 async def awake(event):
   madboy = event.sender.first_name
   MadBoy = f"✧✧ ROMEO-3.0 IS UP AND RUNNING SUCCESSFULLY ✧✧\n\n"
@@ -41,10 +42,11 @@ async def awake(event):
   MadBoy += "THANKS FOR USING ME!!"
   BUTTON = [[Button.url("🧑‍💻 DEVELOPER 🧑‍💻", "https://t.me/Warning_MadBoy_is_Here"), Button.url("DEVs", "https://t.me/Wanacoins")]]
   BUTTON += [[custom.Button.inline("REPOSITORYS »»", data="MadBoi")]]
-  await tbot.send_file(event.chat_id, PHOTO, caption=MadBoy,  buttons=BUTTON)
+  await tbot.send_file(event.chat_id, ROMEOv3, caption=MadBoy,  buttons=BUTTON)
 
-# ALIVE TEXT :-
-# COPYRIGHT (C) BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) {STILL GOING TO USE WITHOUT PERMISSION, BE READY FOR DMCA}
+# ALIVE AND REPOSITORYS TEXT :-
+# COPYRIGHT (C) 2021 BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) 
+# {STILL GOING TO USE WITHOUT PERMISSION, BE READY FOR DMCA}
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"MadBoi")))
@@ -63,7 +65,7 @@ async def callback_query_handler(event):
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"MadB")))
 async def callback_query_handler(event):
-  global PHOTO
+  global ROMEOv3
   madboy = event.sender.first_name
 
   MadBy = f"✧✧ ROMEO-3.0 IS UP AND RUNNING SUCCESSFULLY ✧✧\n\n"
@@ -89,5 +91,6 @@ __help__ = """
 """
 __mod_name__ = "Alive⚜️"
 
-# ALIVE TEXT :-
-# COPYRIGHT (C) BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) {STILL GOING TO USE WITHOUT PERMISSION, BE READY FOR DMCA}
+# ALIVE AND REPOSITORYS TEXT :-
+# COPYRIGHT (C) 2021 BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) 
+# {STILL GOING TO USE WITHOUT PERMISSION, BE READY FOR DMCA}

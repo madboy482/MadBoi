@@ -86,8 +86,8 @@ async def repo(event):
 
 
 __help__ = """
- - /alive, #alive check bot alive or dead
- - /repo, #repo for this bot repo
+ - /alive check bot alive or dead
+ - /repo for this bot's repo and deploy option
 """
 __mod_name__ = "Alive⚜️"
 

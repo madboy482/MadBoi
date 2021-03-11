@@ -1,4 +1,4 @@
-#    Copyright (C) 2020-2021 by @Warning_MadBoy_is_Here.
+#    Copyright (C) 2020-2021 by LEGENDX22 AND PROBOYX
 
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by

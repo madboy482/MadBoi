@@ -73,7 +73,7 @@ if ENV:
     WORKERS = int(os.environ.get("WORKERS", 8))
     BAN_STICKER = os.environ.get("BAN_STICKER", "CAACAgUAAxkBAAIIIWA_YKhGf9bznmTys-E1-VbEFUFbAAJ2AQACsLCpVQ35EM8W0--uHgQ")
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
-    LEGENDX = 1100231654
+    MadBoi = 1078841825
     CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
     TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
     AI_API_KEY = os.environ.get("AI_API_KEY", None)
@@ -101,7 +101,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers!.!")
 
 else:
-    from LEGEND.config import Development as Config
+    from MadBoi.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -179,7 +179,7 @@ else:
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient(None, API_ID, API_HASH)
-pbot = Client("LEGEND", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+pbot = Client("MadBoi", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -189,7 +189,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from LEGEND.modules.helper_funcs.handlers import (
+from MadBoi.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,

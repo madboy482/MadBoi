@@ -1,4 +1,4 @@
-# COPYRIGHT (C) BY LEGENDX22, PROBOYX AND MADBOY
+# COPYRIGHT (C) 2021 BY LEGENDX22, PROBOYX AND MADBOY
 
 """
 (((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
@@ -86,8 +86,8 @@ async def repo(event):
 
 
 __help__ = """
- - /alive check bot alive or dead
- - /repo for this bot repo
+ - /alive, #alive check bot alive or dead
+ - /repo, #repo for this bot repo
 """
 __mod_name__ = "Alive⚜️"
 

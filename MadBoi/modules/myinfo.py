@@ -43,7 +43,7 @@ async def callback_query_handler(event):
   try:
     BOI = event.sender_id
     MAD = await bot.get_entity(BOI)
-    MadBoy = "✧✧ YOUR DETAILS BY ROMEO-3.0 ✧✧\n"
+    MadBoy = "✧✧ YOUR DETAILS BY ROMEO-3.0 ✧✧\n\n"
     MadBoy += f"➥ FIRST NAME : {MAD.first_name} \n"
     MadBoy += f"➥ LAST NAME : {MAD.last_name}\n"
     MadBoy += f"➥ BOT? : {MAD.bot} \n"

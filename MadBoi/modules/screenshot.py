@@ -5,6 +5,18 @@
 (((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
 (((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
 """
+#    Don't dare to remove the credits, else be ready for DMCA.
+#    Changed some texts for ROMEO-3.0
+
+#    Credits to :-
+#    ➥ LEGENDX
+#    ➥ PROBOY
+#    ➥ MADBOY
+
+# +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+ +-+ +-+ +-+
+# |K| |A| |N| |G|    |W| |I| |T| |H|    |C| |R| |E| |D| |I| |T| |S|
+# +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+ +-+ +-+ +-+
+
 import io
 from MadBoi import telethn as borg
 import requests

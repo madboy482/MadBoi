@@ -30,7 +30,7 @@ from MadBoi import telethn as bot
 from MadBoi import telethn as tgbot
 from MadBoi.events import register 
 @register(pattern="/myinfo|#myinfo")
-async def proboyx(event):
+async def mboy(event):
   button = [[custom.Button.inline("CHECK 👀",data="info")]]
   await bot.send_message(event.chat, "YOUR INFO",buttons=button)
 

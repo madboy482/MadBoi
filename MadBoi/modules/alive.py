@@ -5,8 +5,8 @@
 (((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
 (((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
 (((((((((((((((((((((((@LEGENDX22)))))))))))))))))))))))))))
-                 MADE BY LEGENDX AND PROBOY
-                PLEASE DON'T REMOVE CREDITS
+            MADE BY LEGENDX, PROBOY AND MADBOY
+               PLEASE DON'T REMOVE CREDITS
 """
 #    Don't dare to remove the credits, else be ready for DMCA.
 #    Changed some texts for ROMEO-3.0

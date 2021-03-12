@@ -82,7 +82,8 @@ def ping(update: Update, context: CallbackContext):
     message.edit_text(
         "<b><i>☞ Pong!!</i></b>\n"
         "<b>➥ Time Taken:</b> <code>{}</code>\n"
-        "<b>➥ Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
+        "<b>➥ Service uptime:</b> <code>{}</code>\n\n"
+        "<b><i>Pingged from ROMEO-3.0 DataBase and Telegram Server✅...</i></b>.format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML)
 
 
@@ -101,12 +102,31 @@ def pingall(update: Update, context: CallbackContext):
     update.effective_message.reply_text(
         reply_msg, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
+@run_async
+@sudo_plus
+def ting(update: Update, context: CallbackContext):
+    msg = update.effective_message
+
+    start_time = time.time()
+    message = msg.reply_text("☞ Tong!!")
+    end_time = time.time()
+    telegram_ping = str(round((end_time - start_time) * 1000, 3)) + " ms"
+    uptime = get_readable_time((time.time() - StartTime))
+
+    message.edit_text(
+        "<b><i>☞ Tong!!</i></b>\n"
+        "<b>➥ Time Taken:</b> <code>{}</code>\n"
+        "<b>➥ Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
+        parse_mode=ParseMode.HTML)
+
 
 PING_HANDLER = DisableAbleCommandHandler("ping", ping)
 PINGALL_HANDLER = DisableAbleCommandHandler("pingall", pingall)
+TING_HANDLER = DisableAbleCommandHandler("ting", ting)
 
 dispatcher.add_handler(PING_HANDLER)
 dispatcher.add_handler(PINGALL_HANDLER)
+dispatcher.add_handler(TING_HANDLER)
 
-__command_list__ = ["ping", "pingall"]
-__handlers__ = [PING_HANDLER, PINGALL_HANDLER]
+__command_list__ = ["ping", "pingall", "ting"]
+__handlers__ = [PING_HANDLER, PINGALL_HANDLER, TING_HANDLER]

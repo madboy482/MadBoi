@@ -10,6 +10,7 @@ from MadBoi.modules.disable import DisableAbleCommandHandler
 from MadBoi.modules.helper_funcs.alternate import typing_action
 from MadBoi.modules.helper_funcs.chat_status import bot_admin, user_admin
 from MadBoi.modules.helper_funcs.extraction import extract_user_and_text
+from MadBoi.events import register
 
 
 @run_async
@@ -255,11 +256,8 @@ def untagall(update, context):
         "Successully removed all users from {}'s tag list.".format(chat.title)
     )
     
-@run_async
-@bot_admin
-@user_admin
-@typing_action
-def all(update, context):
+@register(pattern=("/all|#all|@all"))
+async def all(event):
     chat = update.effective_chat
     update.effective_user
     message = update.effective_message
@@ -306,7 +304,7 @@ Tagger is an essential feature to mention all subscribed members in the group. A
 - /untagall: clears all subscribed members. 
 - /addtag <userhandle>: add a user to chat tag list. (via handle, or reply)
 - /removetag <userhandle>: remove a user to chat tag list. (via handle, or reply)
-- /all: tag all subscribed members.
+- @all: tag all subscribed members.
 """
 
 TAG_ALL_HANDLER = DisableAbleCommandHandler("tagall", tagall, filters=Filters.group)
@@ -321,8 +319,10 @@ ADD_TAG_HANDLER = DisableAbleCommandHandler(
 REMOVE_TAG_HANDLER = DisableAbleCommandHandler(
     "removetag", removetag, pass_args=True, filters=Filters.group
 )
+ALL_HANDLER = DisableAbleCommandHandler(
+    "all", all, filters=Filters.group
+)
 TAGALL_CALLBACK_HANDLER = CallbackQueryHandler(tagg_all_button, pattern=r"tagall_")
-ALL_HANDLER = DisableAbleCommandHandler("all", all, filters=Filters.group)
 
 
 dispatcher.add_handler(TAG_ALL_HANDLER)

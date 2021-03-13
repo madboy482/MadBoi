@@ -33,7 +33,7 @@
 <a href="https://github.com/madboy482/MadBoi/blob/master/LICENSE" alt="GPLv3 license"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" /> </a>
 </p>
 <p align="center">
-<a href="https://t.me/Romeo_JulietBotSupport" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
+<a href="https://telegram.me/Romeo_JulietBotSupport" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
 <a href="https://github.com/madboy482/MadBoi/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" /> </a>
 <a href="https://makeapullrequest.com" alt="PRs Welcome"> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /> </a>
 </p>
@@ -45,7 +45,7 @@
 ## - INLINE YOUTUBE SEARCH ✅
 
 * Bot Link:  <a href="https://telegram.me/Romeov3Bot" alt="Romeo-3.0"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-ROMEOv3-blue" /> </a>
-* News channel: <a  href="https://telegram.me/Romeo_JulietBotSupport" alt="One Punch Updates"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-ROMEOv3%20Bot%20Support-9cf" /> </a>
+* Updates channel: <a  href="https://telegram.me/Romeo_JulietBotSupport" alt="One Punch Updates"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-ROMEOv3%20Bot%20Support-9cf" /> </a>
 
 Should you be forking this repo then do not forget to star it - <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/madboy482/MadBoi?color=white&label=%F0%9F%8C%9F%20star">
 

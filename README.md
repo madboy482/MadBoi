@@ -38,11 +38,13 @@
 <a href="https://makeapullrequest.com" alt="PRs Welcome"> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /> </a>
 </p>
   
-### ROMEO-3.0 IS A SUPERB GROUP MODERATOR BOT FOR TELEGRAM GROUPS, IT HELPS ADMINS/OWNERS TO MANAGE THEIR GROUPS EASILY.....
-#### - NOW WITH FORCE-SUBSCRIBE CODE ✅
-#### - INLINE ALIVE ✅
-#### - PLUGIN INSTALLER AND UPDATER (Tho for DEVs only...) ✅
-#### - INLINE YOUTUBE SEARCH ✅
+## ROMEO-3.0 IS A SUPERB GROUP MODERATOR BOT FOR TELEGRAM GROUPS, IT HELPS ADMINS/OWNERS TO MANAGE THEIR GROUPS EASILY.....
+### - NOW WITH FORCE-SUBSCRIBE CODE ✅
+### - INLINE ALIVE ✅
+### - PLUGIN INSTALLER AND UPDATER (Tho for DEVs only...) ✅
+### - INLINE YOUTUBE SEARCH ✅
+
+
 
 # ABOUT
 

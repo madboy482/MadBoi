@@ -1,6 +1,7 @@
 import subprocess
 from MadBoi import telethn as bot
 from MadBoi.events import register
+from MadBoy import user
 from MadBoi import OWNER_ID, DEV_USERS as SUDO_USERS, MadBoi
 import asyncio
 import traceback

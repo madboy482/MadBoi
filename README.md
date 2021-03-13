@@ -45,13 +45,14 @@
 ## - INLINE YOUTUBE SEARCH ✅
 
 * Bot Link:  <a href="https://t.me/Romeov3Bot" alt="Romeo-3.0"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-ROMEOv3-blue" /> </a>
-* News channel: <a  href="https://t.me/Romeo_JulietBotSupport" alt="One Punch Updates"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-One%20Punch%20Updates-9cf" /> </a>
+* News channel: <a  href="https://t.me/Romeo_JulietBotSupport" alt="One Punch Updates"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-ROMEOv3%20Bot%20Support-9cf" /> </a>
 
-Should you be forking this repo then do not forget to star it - <img alt="GitHub Repo stars" src="https://img.shields.io/badge/%F0%9F%92%A1-ROMEOv3%20Bot%20Support-9cf?color=white&label=%F0%9F%8C%9F%20star">
+Should you be forking this repo then do not forget to star it - <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/madboy482/MadBoi?color=white&label=%F0%9F%8C%9F%20star">
 
-## Credits 📍
-➥ <b>OWNER</b> » <i><b>[MADBOY](https://github.com/MadBoy482)</b></i> or <b><i>[MADBOY](https://telegram.me/Warning_MadBoy_is_Here)</i></b>
-➥ <b>DEV</b> » <i><b>[PRANAV](https://telegram.me/Wanacoins)</b></i>
+# Credits 📍
+## ➥ <b>OWNER</b> » <i><b>[MADBOY](https://github.com/MadBoy482)</b></i> or <b><i>[MADBOY](https://telegram.me/Warning_MadBoy_is_Here)</i></b>
+
+## ➥ <b>DEV</b> » <i><b>[PRANAV](https://telegram.me/Wanacoins)</b></i>
 
 
 ## Special Thanks To [Legend X](https://telegram.me/LEGENDX22) and [ProBoy](https://telegram.me/PROBOYX)

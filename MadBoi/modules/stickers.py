@@ -198,9 +198,10 @@ def kang(update: Update, context: CallbackContext):
                         "Max packsize reached. Press F to pay respecc.")
                 elif e.message == "Internal Server Error: sticker set not found (500)":
                     msg.reply_text(
-                        "Sticker successfully added to [pack](t.me/addstickers/%s)"
+                        "*☞ Sticker successfully added to _[Pack](t.me/addstickers/%s)_*"
                         % packname + "\n"
-                        "Emoji is:" + " " + sticker_emoji,
+                        "*➥ Emoji is:*" + " " + sticker_emoji
+                        "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                         parse_mode=ParseMode.MARKDOWN,
                     )
                 print(e)
@@ -254,7 +255,7 @@ def kang(update: Update, context: CallbackContext):
                         "*☞ Sticker successfully added to _[Pack](t.me/addstickers/%s)_*"
                         % packname + "\n"
                         "*➥ Emoji is:*" + " " + sticker_emoji
-                        "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*,
+                        "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                         parse_mode=ParseMode.MARKDOWN,
                     )
                 print(e)
@@ -329,7 +330,7 @@ def kang(update: Update, context: CallbackContext):
                     "*☞ Sticker successfully added to _[Pack](t.me/addstickers/%s)_*"
                         % packname + "\n"
                         "*➥ Emoji is:*" + " " + sticker_emoji
-                        "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*,
+                        "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                         parse_mode=ParseMode.MARKDOWN,
                 )
             elif e.message == "Invalid sticker emojis":
@@ -338,10 +339,10 @@ def kang(update: Update, context: CallbackContext):
                 msg.reply_text("Max packsize reached. Press F to pay respecc.")
             elif e.message == "Internal Server Error: sticker set not found (504)":
                 msg.reply_text(
-                    *☞ Sticker successfully added to _[Pack](t.me/addstickers/%s)_*"
+                        "*☞ Sticker successfully added to _[Pack](t.me/addstickers/%s)_*"
                         % packname + "\n"
                         "*➥ Emoji is:*" + " " + sticker_emoji
-                        "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*,
+                        "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                         parse_mode=ParseMode.MARKDOWN,
                 )
             print(e)
@@ -402,7 +403,7 @@ def makepack_internal(
         if e.message == "Sticker set name is already occupied":
             msg.reply_text(
                 "Your pack can be found [HERE](t.me/addstickers/%s)" % packname
-                "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*,
+                "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                 parse_mode=ParseMode.MARKDOWN,
             )
         elif e.message in ("Peer_id_invalid", "Bot was Blocked by the User"):
@@ -417,7 +418,7 @@ def makepack_internal(
             msg.reply_text(
                 "Sticker pack successfully created. Get it [HERE](t.me/addstickers/%s)"
                 % packname
-                "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*,
+                "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                 parse_mode=ParseMode.MARKDOWN,
             )
         return
@@ -426,7 +427,7 @@ def makepack_internal(
         msg.reply_text(
             "Sticker pack successfully created. Get it [HERE](t.me/addstickers/%s)"
             % packname
-            "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*,
+            "\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
             parse_mode=ParseMode.MARKDOWN,
         )
     else:

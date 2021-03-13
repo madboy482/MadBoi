@@ -44,10 +44,12 @@
 #### - PLUGIN INSTALLER AND UPDATER (Tho for DEVs only...) ✅
 #### - INLINE YOUTUBE SEARCH ✅
 
+# ABOUT
+
 * Bot Link:  <a href="https://telegram.me/Romeov3Bot" alt="Romeo-3.0"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-ROMEOv3-blue" /> </a>
 * Updates channel: <a  href="https://telegram.me/Romeo_JulietBotSupport" alt="One Punch Updates"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-ROMEOv3%20Bot%20Support-9cf" /> </a>
 
-Should you be forking this repo then do not forget to star it - <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/madboy482/MadBoi?color=white&label=%F0%9F%8C%9F%20star">
+* Should you be forking this repo then do not forget to star it - <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/madboy482/MadBoi?color=white&label=%F0%9F%8C%9F%20star">
 
 # Credits 📍
 ## ➥ <b>OWNER</b> » <i><b>[MADBOY](https://github.com/MadBoy482)</b></i> or <b><i>[MADBOY](https://telegram.me/Warning_MadBoy_is_Here)</i></b>

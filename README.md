@@ -38,11 +38,13 @@
 <a href="https://makeapullrequest.com" alt="PRs Welcome"> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" /> </a>
 </p>
 
-# ROMEO-3.0 IS A SUPERB GROUP MODERATOR BOT FOR TELEGRAM GROUPS, IT HELPS ADMINS/OWNERS TO MANAGE THEIR GROUPS EASILY.....
-## - NOW WITH FORCE-SUBSCRIBE CODE ✅
-## - INLINE ALIVE ✅
-## - PLUGIN INSTALLER AND UPDATER (Tho for DEVs only...) ✅
-## - INLINE YOUTUBE SEARCH ✅
+<p align="center">
+  # ROMEO-3.0 IS A SUPERB GROUP MODERATOR BOT FOR TELEGRAM GROUPS, IT HELPS ADMINS/OWNERS TO MANAGE THEIR GROUPS EASILY.....
+  ## - NOW WITH FORCE-SUBSCRIBE CODE ✅
+  ## - INLINE ALIVE ✅
+  ## - PLUGIN INSTALLER AND UPDATER (Tho for DEVs only...) ✅
+  ## - INLINE YOUTUBE SEARCH ✅
+</p>
 
 * Bot Link:  <a href="https://telegram.me/Romeov3Bot" alt="Romeo-3.0"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-ROMEOv3-blue" /> </a>
 * Updates channel: <a  href="https://telegram.me/Romeo_JulietBotSupport" alt="One Punch Updates"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-ROMEOv3%20Bot%20Support-9cf" /> </a>

@@ -61,7 +61,7 @@ def send_rules(update, chat_id, from_pm=False):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Rules", url=f"t.me/{bot.username}?start={chat_id}"
+                            text="Rules »", url=f"t.me/{bot.username}?start={chat_id}"
                         )
                     ]
                 ]

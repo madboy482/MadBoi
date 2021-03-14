@@ -109,11 +109,7 @@ So just go and read the config sample file.
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/madboy482/MadBoi.git) 
 
 <details>
-<summary>
-  
-# Credits 📍
-</summary
-
+# <summary>Credits 📍</summary
 ## ➥ <b>OWNER</b> » <i><b>[MADBOY](https://github.com/MadBoy482)</b></i> or <b><i>[MADBOY](https://telegram.me/Warning_MadBoy_is_Here)</i></b>
 
 ## ➥ <b>DEV</b> » <i><b>[PRANAV](https://telegram.me/Wanacoins)</b></i>

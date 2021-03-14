@@ -108,10 +108,16 @@ So just go and read the config sample file.
 ## Setup on Heroku 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/madboy482/MadBoi.git) 
 
+<details>
+<summary>
+  
 # Credits 📍
+</summary
+
 ## ➥ <b>OWNER</b> » <i><b>[MADBOY](https://github.com/MadBoy482)</b></i> or <b><i>[MADBOY](https://telegram.me/Warning_MadBoy_is_Here)</i></b>
 
 ## ➥ <b>DEV</b> » <i><b>[PRANAV](https://telegram.me/Wanacoins)</b></i>
 
 
 ## Special Thanks To [Legend X](https://telegram.me/LEGENDX22) and [ProBoy](https://telegram.me/PROBOYX)
+</details>

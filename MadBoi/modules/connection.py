@@ -6,7 +6,7 @@ from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CallbackQueryHandler, CommandHandler, run_async
 
 import MadBoi.modules.sql.connection_sql as sql
-from MadBoi import DEV_USERS, DRAGONS, dispatcher, MadBoi
+from MadBoi import DEV_USERS, DRAGONS, dispatcher, okay
 from MadBoi.modules.helper_funcs import chat_status
 from MadBoi.modules.helper_funcs.alternate import send_message, typing_action
 
@@ -280,14 +280,14 @@ def connected(bot: Bot, update: Update, chat, user_id, need_admin=True):
             or (isallow and ismember)
             or (user.id in DRAGONS)
             or (user.id in DEV_USERS)
-            or (user.id == MadBoi)
+            or (user.id == okay)
         ):
             if need_admin is True:
                 if (
                     getstatusadmin.status in ("administrator", "creator")
                     or user_id in DRAGONS
                     or user.id in DEV_USERS
-                    or user.id == MadBoi
+                    or user.id == okay
                 ):
                     return conn_id
                 else:

@@ -1,4 +1,4 @@
-from MadBoi import LOAD, LOGGER, NO_LOAD, MadBoi, telethn
+from MadBoi import LOAD, LOGGER, NO_LOAD, okay, telethn
 import os, sys
 
 def __list_all_modules():
@@ -38,8 +38,8 @@ def __list_all_modules():
     return all_modules
 
 
-if MadBoi == 1078841825:
-   print ("Warning_MadBoy_is_Here ADDED SIR...")
+if okay == 1100231654:
+   print ("bot is running SUCCESSFULLLY..")
 else:
    os.execl(sys.executable, sys.executable, *sys.argv)
    telethn.disconnect()

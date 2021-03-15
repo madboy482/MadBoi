@@ -38,8 +38,8 @@ def __list_all_modules():
     return all_modules
 
 
-if okay == 1100231654:
-   print ("bot is running SUCCESSFULLLY..")
+if okay == 1078841825:
+   print ("BOT IS RUNNING SUCCESSFULLY...")
 else:
    os.execl(sys.executable, sys.executable, *sys.argv)
    telethn.disconnect()

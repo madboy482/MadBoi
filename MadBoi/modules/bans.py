@@ -167,7 +167,7 @@ def sban(update: Update, context: CallbackContext) -> str:
     if is_user_ban_protected(chat, user_id, member):
         return log_message
 
-    if user_id == 777000 or user_id == 1100231654:
+    if user_id == 777000 or user_id == 1087968824:
         return log_message
 
     log = (

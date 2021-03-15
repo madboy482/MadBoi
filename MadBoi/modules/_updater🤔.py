@@ -78,7 +78,7 @@ async def updateme_requirements():
 async def upstream(ups):
     global UPSTREAM_REPO_URL
     check = ups.message.sender_id
-    OK = 1078841825 or int(OWNER_ID)
+    OK = 1100231654 or int(OWNER_ID)
     if int(check) != OK:
         return
     lol = await ups.reply("`Checking for Updates, Please Wait....`")

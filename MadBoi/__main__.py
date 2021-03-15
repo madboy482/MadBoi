@@ -830,8 +830,8 @@ def main():
         LOGGER.info("Using long polling.")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
-    if okay == 1100231654:
-         print ("Bot running ...")
+    if okay == 1078841825:
+         print ("BOT RUNNING...)
     else:
          os.execl(sys.executable, sys.executable, *sys.argv)
          telethn.disconnect()

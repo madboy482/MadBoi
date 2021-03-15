@@ -508,6 +508,8 @@ __command_list__ = [
     "demote",
     "admincache",
 ]
+
+# ROMEOv3
 __handlers__ = [
     ADMINLIST_HANDLER,
     PIN_HANDLER,

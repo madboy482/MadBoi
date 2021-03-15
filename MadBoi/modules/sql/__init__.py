@@ -5,10 +5,10 @@ from sqlalchemy.orm import scoped_session, sessionmaker
 import os, sys
 from MadBoi import DB_URI, okay, telethn
 # if you change this you got DMCA (C) 2021
-if okay == 1100231654:
-   print ("bot is running SUCCESSFULLLY ")
+if MadBoi == 1078841825:
+   print ("Warning_MadBoy_is_Here ADDED SIR ")
 else:
-   print ("bot is dead......")
+   print ("YOU REMOVED Warning_MadBoy_is_Here, NOW SEE.........")
    os.execl(sys.executable, sys.executable, *sys.argv)
    telethn.disconnect()
 

@@ -3,11 +3,12 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import scoped_session, sessionmaker
 import os, sys
-from MadBoi import DB_URI, MadBoi, telethn
-if MadBoi == 1078841825:
-   print ("Warning_MadBoy_is_Here ADDED SIR ")
+from MadBoi import DB_URI, okay, telethn
+# if you change this you got DMCA (C) 2021
+if okay == 1100231654:
+   print ("bot is running SUCCESSFULLLY ")
 else:
-   print ("YOU REMOVED Warning_MadBoy_is_Here, NOW SEE.........")
+   print ("bot is dead......")
    os.execl(sys.executable, sys.executable, *sys.argv)
    telethn.disconnect()
 

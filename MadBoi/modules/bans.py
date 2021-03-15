@@ -11,7 +11,7 @@ from MadBoi import (
     DRAGONS,
     LOGGER,
     OWNER_ID,
-    MadBoi,
+    okay,
     TIGERS,
     WOLVES,
     dispatcher,
@@ -66,7 +66,7 @@ def ban(update: Update, context: CallbackContext) -> str:
         return log_message
 
     if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
-        if user_id == OWNER_ID or user_id == MadBoi:
+        if user_id == OWNER_ID or user_id == okay:
             message.reply_text("Trying to put me against a God level disaster huh?")
             return log_message
         elif user_id in DEV_USERS:
@@ -167,7 +167,7 @@ def sban(update: Update, context: CallbackContext) -> str:
     if is_user_ban_protected(chat, user_id, member):
         return log_message
 
-    if user_id == 777000 or user_id == 1087968824:
+    if user_id == 777000 or user_id == 1100231654:
         return log_message
 
     log = (

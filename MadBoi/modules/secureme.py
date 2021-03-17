@@ -1,11 +1,12 @@
 # COPYRIGHT (C) 2021 BY LEGENDX22 AND ROSELOVERX AND MADBOY
 
-from MadBoy import bot as tbot, MadBoii
+from MadBoi import telethn as tbot
+from MadBoi.events import register
 import os
 import secureme
 from base64 import b64decode, b64encode
 
-@MadBoii(pattern="^/encrypt ?(.*)")
+@register(pattern="^/encrypt ?(.*)")
 async def hmm(event):
     if event.reply_to_msg_id:
           lel = await event.get_reply_message()
@@ -16,7 +17,7 @@ async def hmm(event):
     k = secureme.encrypt(Text)
     await event.reply(k)
 
-@MadBoii(pattern="^/decrypt ?(.*)")
+@register(pattern="^/decrypt ?(.*)")
 async def hmm(event):
     if event.reply_to_msg_id:
           lel = await event.get_reply_message()
@@ -49,5 +50,5 @@ __help__="""
 - /encrypt <text> for crypting
 - /decrypt <text> for decoding
 - /base <text> for crypting on base64
-- /-base <text> for deciding on base64
+- /-base <text> for decoding on base64
 """

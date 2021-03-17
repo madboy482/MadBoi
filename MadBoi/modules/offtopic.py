@@ -1,5 +1,5 @@
 from telethon import events
-from MadBoy import bot as client
+from MadBoi import telethn as client
 @client.on(events.NewMessage(pattern='#offtopic|#ot'))
 async def handler(event):
   if event.chat_id == -1001448375234:

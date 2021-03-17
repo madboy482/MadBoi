@@ -23,7 +23,7 @@ from telegram.ext import (
 from telegram.utils.helpers import mention_html, mention_markdown
 
 import MadBoi.modules.sql.feds_sql as sql
-from MadBoi import DRAGONS, EVENT_LOGS, LOGGER, OWNER_ID, TIGERS, WOLVES, dispatcher, MadBoi
+from MadBoi import DRAGONS, EVENT_LOGS, LOGGER, OWNER_ID, TIGERS, WOLVES, dispatcher, okay
 from MadBoi.modules.disable import DisableAbleCommandHandler
 from MadBoi.modules.helper_funcs.alternate import send_message
 from MadBoi.modules.helper_funcs.chat_status import is_user_admin
@@ -142,7 +142,7 @@ def del_fed(update: Update, context: CallbackContext):
         if getinfo is False:
             update.effective_message.reply_text("This federation does not exist.")
             return
-        if int(getinfo["owner"]) == int(user.id) or int(user.id) == OWNER_ID or int(user.id) == MadBoi:
+        if int(getinfo["owner"]) == int(user.id) or int(user.id) == OWNER_ID or int(user.id) == okay:
             fed_id = is_fed_id
         else:
             update.effective_message.reply_text("Only federation owners can do this!")
@@ -600,7 +600,7 @@ def fed_ban(update: Update, context: CallbackContext):
         message.reply_text("He is a federation admin, I can't fban him.")
         return
 
-    if user_id == OWNER_ID or user_id == MadBoi:
+    if user_id == OWNER_ID or user_id == okay:
         message.reply_text("Disaster level God cannot be fed banned!")
         return
 
@@ -1712,7 +1712,7 @@ def fed_import_bans(update: Update, context: CallbackContext):
                     if str(import_userid) == str(OWNER_ID):
                         failed += 1
                         continue
-                    if int(import_userid) in DRAGONS or int(import_userid) == MadBoi:
+                    if int(import_userid) in DRAGONS or int(import_userid) == okay:
                         failed += 1
                         continue
                     if int(import_userid) in TIGERS:
@@ -1789,7 +1789,7 @@ def fed_import_bans(update: Update, context: CallbackContext):
                     if str(import_userid) == str(OWNER_ID):
                         failed += 1
                         continue
-                    if int(import_userid) in DRAGONS or int(import_userid) == MadBoi:
+                    if int(import_userid) in DRAGONS or int(import_userid) == okay:
                         failed += 1
                         continue
                     if int(import_userid) in TIGERS:
@@ -2249,7 +2249,7 @@ def is_user_fed_admin(fed_id, user_id):
     fed_admins = sql.all_fed_users(fed_id)
     if fed_admins is False:
         return False
-    if int(user_id) in fed_admins or int(user_id) == OWNER_ID or int(user_id) == MadBoi:
+    if int(user_id) in fed_admins or int(user_id) == OWNER_ID or int(user_id) == okay:
         return True
     else:
         return False
@@ -2263,7 +2263,7 @@ def is_user_fed_owner(fed_id, user_id):
     if getfedowner is None or getfedowner is False:
         return False
     getfedowner = getfedowner["owner"]
-    if str(user_id) == getfedowner or int(user_id) == OWNER_ID or int(user_id) == MadBoi:
+    if str(user_id) == getfedowner or int(user_id) == OWNER_ID or int(user_id) == okay:
         return True
     else:
         return False

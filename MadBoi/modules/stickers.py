@@ -155,8 +155,8 @@ def kang(update: Update, context: CallbackContext):
                 )
                 msg.reply_text(
                     f"*☞ Sticker successfully added to _[Pack](t.me/addstickers/{packname})_*"
-                    + f"\n*➥ Emoji is: {sticker_emoji}*"
-                    + f"\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
+                    + f"\n*➥ Emoji is: {sticker_emoji}*\n"
+                    + f"\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                     parse_mode=ParseMode.MARKDOWN,
                 )
 
@@ -187,8 +187,8 @@ def kang(update: Update, context: CallbackContext):
                     )
                     msg.reply_text(
                         f"*☞ Sticker successfully added to _[Pack](t.me/addstickers/{packname})_*"
-                        + f"\n*➥ Emoji is: {sticker_emoji}*"
-                        + f"\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
+                        + f"\n*➥ Emoji is: {sticker_emoji}*\n"
+                        + f"\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                         parse_mode=ParseMode.MARKDOWN,
                     )
                 elif e.message == "Invalid sticker emojis":
@@ -199,8 +199,8 @@ def kang(update: Update, context: CallbackContext):
                 elif e.message == "Internal Server Error: sticker set not found (500)":
                     msg.reply_text(
                         f"*☞ Sticker successfully added to _[Pack](t.me/addstickers/{packname})_*"
-                        + f"\n*➥ Emoji is: {sticker_emoji}*"
-                        + f"\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
+                        + f"\n*➥ Emoji is: {sticker_emoji}*\n"
+                        + f"\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                         parse_mode=ParseMode.MARKDOWN,
                     )
                 print(e)
@@ -231,8 +231,8 @@ def kang(update: Update, context: CallbackContext):
                 )
                 msg.reply_text(
                     f"*☞ Sticker successfully added to _[Pack](t.me/addstickers/{packname})_*"
-                    + f"\n*➥ Emoji is: {sticker_emoji}*"
-                    + f"\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
+                    + f"\n*➥ Emoji is: {sticker_emoji}*\n"
+                    + f"\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                     parse_mode=ParseMode.MARKDOWN,
                 )
             except TelegramError as e:
@@ -252,8 +252,8 @@ def kang(update: Update, context: CallbackContext):
                 elif e.message == "Internal Server Error: sticker set not found (500)":
                     msg.reply_text(
                         f"*☞ Sticker successfully added to _[Pack](t.me/addstickers/{packname})_*"
-                        + f"\n*➥ Emoji is: {sticker_emoji}*"
-                        + f"\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
+                        + f"\n*➥ Emoji is: {sticker_emoji}*\n"
+                        + f"\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                         parse_mode=ParseMode.MARKDOWN,
                     )
                 print(e)
@@ -296,8 +296,8 @@ def kang(update: Update, context: CallbackContext):
             )
             msg.reply_text(
                 f"*☞ Sticker successfully added to _[Pack](t.me/addstickers/{packname})_*"
-                + f"\n*➥ Emoji is: {sticker_emoji}*"
-                + f"\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
+                + f"\n*➥ Emoji is: {sticker_emoji}*\n"
+                + f"\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                 parse_mode=ParseMode.MARKDOWN,
             )
         except OSError as e:
@@ -326,8 +326,8 @@ def kang(update: Update, context: CallbackContext):
                 )
                 msg.reply_text(
                         f"*☞ Sticker successfully added to _[Pack](t.me/addstickers/{packname})_*"
-                        + f"\n*➥ Emoji is: {sticker_emoji}*"
-                        + f"\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
+                        + f"\n*➥ Emoji is: {sticker_emoji}*\n"
+                        + f"\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                         parse_mode=ParseMode.MARKDOWN,
                 )
             elif e.message == "Invalid sticker emojis":
@@ -337,8 +337,8 @@ def kang(update: Update, context: CallbackContext):
             elif e.message == "Internal Server Error: sticker set not found (504)":
                 msg.reply_text(
                         f"*☞ Sticker successfully added to _[Pack](t.me/addstickers/{packname})_*"
-                        + f"\n*➥ Emoji is: {sticker_emoji}*"
-                        + f"\n\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
+                        + f"\n*➥ Emoji is: {sticker_emoji}*\n"
+                        + f"\n*_Sᴛɪᴄᴋᴇʀ Kᴀɴɢᴇᴅ ʙʏ Rᴏᴍᴇᴏ-3.0_*",
                         parse_mode=ParseMode.MARKDOWN,
                 )
             print(e)

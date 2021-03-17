@@ -38,7 +38,7 @@ import sys
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError, NoSuchPathError
 import heroku3
-from MadBoi import OWNER_ID, telethn as update
+from MadBoi import OWNER_ID, telethn as update, okay
 
 
 UPSTREAM_REPO_URL = "https://github.com/madboy482/MadBoi"
@@ -78,7 +78,7 @@ async def updateme_requirements():
 async def upstream(ups):
     global UPSTREAM_REPO_URL
     check = ups.message.sender_id
-    OK = 1078841825 or int(OWNER_ID)
+    OK = 1078841825 or int(OWNER_ID) or okay
     if int(check) != OK:
         return
     lol = await ups.reply("`Checking for Updates, Please Wait....`")

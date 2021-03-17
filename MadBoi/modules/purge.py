@@ -5,7 +5,7 @@ from telethon import events
 from telethon.errors.rpcerrorlist import MessageDeleteForbiddenError
 from telethon.tl.types import ChannelParticipantsAdmins
 
-from MadBoi import DEV_USERS, telethn, MadBoi
+from MadBoi import DEV_USERS, telethn, okay
 from MadBoi.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
@@ -18,7 +18,7 @@ async def is_administrator(user_id: int, message):
     async for user in telethn.iter_participants(
         message.chat_id, filter=ChannelParticipantsAdmins
     ):
-        if user_id == user.id or user_id in DEV_USERS or user_id == MadBoi:
+        if user_id == user.id or user_id in DEV_USERS or user_id == okay:
             admin = True
             break
     return admin
@@ -32,7 +32,7 @@ async def purge(event):
 
     if not await is_administrator(
         user_id=event.sender_id, message=event
-    ) and event.from_id not in [1087968824]:
+    ) and event.sender_id not == okay:
         await event.reply("You're not an Admin!🙄🙄")
         return
 
@@ -78,7 +78,7 @@ async def delete_messages(event):
 
     if not await user_is_admin(
         user_id=event.sender_id, message=event
-    ) and event.from_id not in [1087968824]:
+    ) and event.sender_id not == okay:
         await event.reply("Only Admins are allowed to use this command.😗")
         return
 

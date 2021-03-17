@@ -2,7 +2,7 @@ import subprocess
 from MadBoi import telethn as bot
 from MadBoi.events import register
 from MadBoy import user
-from MadBoi import OWNER_ID, DEV_USERS as SUDO_USERS, MadBoi
+from MadBoi import OWNER_ID, DEV_USERS as SUDO_USERS, okay
 import asyncio
 import traceback
 import io
@@ -16,7 +16,7 @@ from telethon.errors import *
 
 @register(pattern="^/bash (.*)")
 async def msg(event):
-    if event.sender_id == OWNER_ID or event.sender_id in SUDO_USERS or event.sender_id == MadBoi:
+    if event.sender_id == OWNER_ID or event.sender_id in SUDO_USERS or event.sender_id == okay:
         pass
     else:
         return
@@ -44,7 +44,7 @@ async def msg(event):
 
 @register(pattern="/eval")
 async def _(event):
-    if event.sender_id == OWNER_ID or event.sender_id == MadBoi:
+    if event.sender_id == OWNER_ID or event.sender_id == okay:
         pass
     elif event.sender_id in SUDO_USERS:
         pass

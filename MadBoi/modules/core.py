@@ -1,4 +1,4 @@
-from MadBoi import telethn as tbot, OWNER_ID, DEV_USERS, MadBoi
+from MadBoi import telethn as tbot, OWNER_ID, DEV_USERS, okay
 from MadBoi.events import register
 import os
 import asyncio
@@ -78,7 +78,7 @@ from pathlib import Path
 async def install(event):
     if event.fwd_from:
         return
-    if event.sender_id == OWNER_ID or event.sender_id in DEV_USERS or event.sender_id == MadBoi:
+    if event.sender_id == OWNER_ID or event.sender_id in DEV_USERS or event.sender_id == okay:
         pass
     else:
         return

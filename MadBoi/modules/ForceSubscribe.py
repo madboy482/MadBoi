@@ -1,5 +1,6 @@
-#    Copyright (C) 2020-2021 by @LEGENDX22
-
+#    Copyright (C) 2020-2021 by @InukaAsith
+#    This programme is a part of DaisyX TG bot project
+#
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -11,9 +12,6 @@
 #
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-#    Don't dare to remove the credits, else be ready for DMCA.
-#    Changed some texts for ROMEO-3.0
 
 #    Credits to :-
 #    ➥ LEGENDX

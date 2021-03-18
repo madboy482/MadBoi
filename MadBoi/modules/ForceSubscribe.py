@@ -1,17 +1,3 @@
-#    Copyright (C) 2020-2021 by @LEGENDX22
-
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 #    Don't dare to remove the credits, else be ready for DMCA.
 #    Changed some texts for ROMEO-3.0
 
@@ -19,6 +5,7 @@
 #    ➥ LEGENDX
 #    ➥ PROBOY
 #    ➥ MADBOY
+#    ➥ DAISY
 
 # +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+ +-+ +-+ +-+
 # |K| |A| |N| |G|    |W| |I| |T| |H|    |C| |R| |E| |D| |I| |T| |S|

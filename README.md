@@ -112,8 +112,9 @@ So just go and read the config sample file.
 
 
 # Credits 📍
-## ➥ <b>OWNER</b> » <a href="https://github.com/madboy482" alt="MadBoy"> <img src="https://img.shields.io/badge/MadBoy-30302f?style=for-the-badge&logo=github" /></a> or [![Telegram badge](https://img.shields.io/badge/MadBoy-ff0000?style=for-the-badge&logo=telegram)](https://telegram.me/Warning_MadBoy_is_Here)
-## ➥ <b>DEV</b> » <a href="https://telegram.me/Wanacoins" alt="Pranav"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-PRANAV-green" /></a>
+## ➥ <b>OWNER</b> » <a href="https://github.com/madboy482" alt="MadBoy"> <img src="https://img.shields.io/badge/MadBoy-30302f?logo=github" /></a> or [<a href="https://telegram.me/Warning_MadBoy_is_Here" alt="MadBoy"> <img src="https://img.shields.io/badge/MadBoy-dcdcdc?logo=telegram" /></a>
+
+## ➥ <b>DEV</b> » <a href="https://telegram.me/Wanacoins" alt="Pranav"> <img src="https://img.shields.io/badge/PRANAV-adff2f?logo=telegram" /></a>
 
 <details>
 <summary><b>SPECIAL THANKS TO</b></summary>

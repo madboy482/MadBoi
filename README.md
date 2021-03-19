@@ -118,6 +118,6 @@ So just go and read the config sample file.
 
 <details>
 <summary><b>SPECIAL THANKS TO</b></summary>
-<b> <a href="https://telegram.me/LEGENDX22">LEGEND X</a></b>
+<b> <a href="https://telegram.me/LEGENDX22">LEGEND X</a></b><br>
 <b><a href="https://telegram.me/PROBOYX">PROBOY X</a></b>
 </details>

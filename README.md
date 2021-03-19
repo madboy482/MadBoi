@@ -117,7 +117,7 @@ So just go and read the config sample file.
 ## ➥ <b>DEV</b> » <i><b>[PRANAV](https://telegram.me/Wanacoins)</b></i>
 
 <details>
-<summary><h1>SPECIAL THANKS TO</h1></summary>
-<b> [LEGEND X](https://telegram.me/LEGENDX22)</b>
+<summary><b>SPECIAL THANKS TO</b></summary>
+<b> <a href="https://telegram.me/LEGENDX22">LEGEND X</a></b>
 <b>[PROBOY X](https://telegram.me/PROBOYX)</b>
 </details>

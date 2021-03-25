@@ -21,7 +21,7 @@ from MadBoi import (
     INFOPIC,
     OWNER_ID,
     TIGERS,
-    MadBoi,
+    okay,
     WOLVES,
     dispatcher,
     sw,
@@ -279,7 +279,7 @@ def info(update: Update, context: CallbackContext):
 
     disaster_level_present = False
 
-    if user.id == OWNER_ID or user.id == MadBoi:
+    if user.id == OWNER_ID or user.id == okay:
         text += "\n\nThe Disaster level of this person is 'God'."
         disaster_level_present = True
     elif user.id in DEV_USERS:

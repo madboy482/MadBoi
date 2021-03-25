@@ -389,8 +389,8 @@ def MadBoi_about_callback(update, context):
     elif query.data == "aboutmanu_howto":
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
-            f"\nYou can also Add *{dispatcher.bot.first_name}* To Your Chats By Clicking *[HERE](http://t.me/{dispatcher.bot.username}?startgroup=true)* And Selecting Chat.✅ \n"
-            f"\n\nYou can get support *{dispatcher.bot.first_name}* by joining *[SUPPORT](https://t.me/Romeo_JulietBot_Support)*.✅\n"
+            f"\nYou can also Add *{dispatcher.bot.first_name}* To Your Chats By Clicking *<a href=https://t.me/{dispatcher.bot.username}?startgroup=true>HERE</a>* And Selecting Chat.✅ \n"
+            f"\n\nYou can get support *{dispatcher.bot.first_name}* by joining *<a href=https://t.me/Romeo_JulietBot_Support)SUPPORT</a>*.✅\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,

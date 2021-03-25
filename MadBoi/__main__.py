@@ -355,7 +355,7 @@ def MadBoi_about_callback(update, context):
             f"\n🧑‍💻 DEVELOPER 🧑‍💻 *-->* @Warning_MadBoy_is_Here"
             f"\n\n🔥 Join [Romeo Support](https://t.me/Romeo_JulietBotSupport) To Keep Yourself Updated About *{dispatcher.bot.first_name}* 🔥"
             f"\n\nI have the normal GROUP MANAGING functions like flood control, A Warning System etc., but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/11de6b6641f5f5d5b344d.jpg)"
+            f"\n\nI can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/f96a2b34ddecce4ad1417.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -389,8 +389,8 @@ def MadBoi_about_callback(update, context):
     elif query.data == "aboutmanu_howto":
         query.message.edit_text(
             text=f"* ｢ BASIC HELP 」*"
-            f"\nYou can also Add *{dispatcher.bot.first_name}* To Your Chats By Clicking *<a href=https://t.me/{dispatcher.bot.username}?startgroup=true>HERE</a>* And Selecting Chat.✅ \n"
-            f"\n\nYou can get support *{dispatcher.bot.first_name}* by joining *<a href=https://t.me/Romeo_JulietBot_Support)SUPPORT</a>*.✅\n"
+            f"\nYou can also Add *{dispatcher.bot.first_name}* To Your Chats By Clicking [HERE](https://t.me/Romeov3Bot?startgroup=true) And Selecting Chat.✅ \n"
+            f"\n\nYou can get support for *{dispatcher.bot.first_name}* by joining @{SUPPORT_CHAT}.✅\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -411,8 +411,8 @@ def MadBoi_about_callback(update, context):
     elif query.data == "aboutmanu_credit":
         query.message.edit_text(
             text=f"*{dispatcher.bot.first_name} Is the redisigned version of Daisy and Naruto for the best performance.*"
-            f"\n\nBased on [MadBoy](https://github.com/madboy482)."
-            f"\n\n*{dispatcher.bot.first_name}*'s source code was rewritten by @Warning_MadBoy_is_Here."
+            f"\n\nOwned by [MadBoy](https://github.com/madboy482)."
+            f"\n\n*{dispatcher.bot.first_name}*'s source code was rewritten by [MadBoy](https://t.me/Warning_MadBoy_is_Here)."
             f"\n\nIf Any Question About *{dispatcher.bot.first_name}*, \nLet Us Know At @{SUPPORT_CHAT}.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,

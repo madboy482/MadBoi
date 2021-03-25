@@ -83,7 +83,7 @@ def ping(update: Update, context: CallbackContext):
         "<b><i>☞ Pong!!</i></b>\n"
         "<b>➥ Time Taken:</b> <code>{}</code>\n"
         "<b>➥ Service uptime:</b> <code>{}</code>\n\n"
-        "<b><i>Pingged from ROMEO-3.0 DataBase and Telegram Server✅...</i></b>".format(telegram_ping, uptime)
+        "<b><i>Pingged from ROMEO-3.0 DataBase and Telegram Server✅...</i></b>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML)
 
 
@@ -116,7 +116,7 @@ def ting(update: Update, context: CallbackContext):
     message.edit_text(
         "<b><i>☞ Tong!!</i></b>\n"
         "<b>➥ Time Taken:</b> <code>{}</code>\n"
-        "<b>➥ Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime)
+        "<b>➥ Service uptime:</b> <code>{}</code>".format(telegram_ping, uptime),
         parse_mode=ParseMode.HTML)
 
 

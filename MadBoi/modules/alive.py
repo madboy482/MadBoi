@@ -29,8 +29,8 @@ import re, os
 from MadBoi.events import register
 from MadBoi import telethn as tbot
 from MadBoi import telethn as tgbot
-ROMEOv3 = "https://telegra.ph/file/90e0bceeaf40b4a16f672.jpg"
-@register(pattern=("/alive|#alive"))
+ROMEOv3 = "https://telegra.ph/file/f96a2b34ddecce4ad1417.jpg"
+@register(pattern=("/alive"))
 async def awake(event):
   madboy = event.sender.first_name
   MadBoy = f"✧✧ ROMEO-3.0 IS UP AND RUNNING SUCCESSFULLY ✧✧\n\n"
@@ -40,18 +40,13 @@ async def awake(event):
   MadBoy += f"➥ FULLY UPDATED\n"
   MadBoy += f"➥ TELETHON : `1.19.5` [LATEST]\n\n"
   MadBoy += "THANKS FOR USING ME!!"
-  BUTTON = [[Button.url("🧑‍💻 DEVELOPER 🧑‍💻", "https://t.me/Warning_MadBoy_is_Here"), Button.url("DEVs", "https://t.me/Wanacoins")]]
+  BUTTON = [[Button.url("🧑‍💻 DEVELOPER 🧑‍💻", "https://t.me/Warning_MadBoy_is_Here"), Button.url("🧑‍💻 DEVs 🧑‍💻", "https://t.me/Wanacoins")]]
   BUTTON += [[custom.Button.inline("REPOSITORYS »»", data="MadBoi")]]
   await tbot.send_file(event.chat_id, ROMEOv3, caption=MadBoy,  buttons=BUTTON)
-
-# ALIVE AND REPOSITORYS TEXT :-
-# COPYRIGHT (C) 2021 BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) 
-# {STILL GOING TO USE WITHOUT PERMISSION, BE READY FOR DMCA}
 
 
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"MadBoi")))
 async def callback_query_handler(event):
-
   MBoy = [[Button.url("REPO » ROMEO", "https://github.com/madboy482/Romeo"), Button.url("REPO » ROMEO-3.0", "https://github.com/madboy482/MadBoi")]]
   MBoy +=[[Button.url("DEPLOY » ROMEO", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fmadboy482%2FRomeo&template=https%3A%2F%2Fgithub.com%2Fmadboy482%2FRomeoP%2FLE"), Button.url("DEPLOY » ROMEO-3.0", "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fmadboy482%2FMadBoi&template=https%3A%2F%2Fgithub.com%2Fmadboy482%2FMadBoi")]]
   MBoy +=[[Button.url("REPO » JOIN CAPTCHA", "https://github.com/madboy482/Join-Captcha"), Button.url("REPO » POKEDEX BOT", "https://github.com/madboy482/Rotom-2.0")]]
@@ -67,7 +62,6 @@ async def callback_query_handler(event):
 async def callback_query_handler(event):
   global ROMEOv3
   madboy = event.sender.first_name
-
   MadBy = f"✧✧ ROMEO-3.0 IS UP AND RUNNING SUCCESSFULLY ✧✧\n\n"
   MadBy += f"➥ DATABASE : `ALL DATABASES FUNCTIONING PROPERLY`\n"
   MadBy += f"➥ ROMEO OS : `3.0` [LATEST]\n"
@@ -86,10 +80,11 @@ async def repo(event):
 
 
 __help__ = """
- - /alive check bot alive or dead
+ - /alive check bot alive or die
  - /repo for this bot's repo and deploy option
 """
 __mod_name__ = "Alive⚜️"
+
 
 # ALIVE AND REPOSITORYS TEXT :-
 # COPYRIGHT (C) 2021 BY MADBOY, DON'T TRY TO USE IT WITHOUT GETTING PERMISSION FROM @Warning_MadBoy_is_Here (Telegram Acc.) 

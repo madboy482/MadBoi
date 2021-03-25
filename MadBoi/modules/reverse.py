@@ -73,7 +73,6 @@ def reverse(update: Update, context: CallbackContext):
             if HE.reason == "Forbidden":
                 msg.reply_text(
                     "Couldn't access the provided link, The website might have blocked accessing to the website by bot or the website does not existed..."
-"
                 )
                 return
         except URLError as UE:

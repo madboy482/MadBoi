@@ -1,7 +1,7 @@
-from LEGEND.events import register as MadBoii
-from LEGEND import telethn as bot
-from LEGEND import API_ID, API_HASH
-from LEGEND.events import *
+from MadBoi.events import register as MadBoii
+from MadBoi import telethn as bot
+from MadBoi import API_ID, API_HASH
+from MadBoi.events import *
 from telethon import TelegramClient
 from telethon.sessions import StringSession
 

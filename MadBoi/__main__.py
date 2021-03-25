@@ -64,7 +64,7 @@ from MadBoi.modules.helper_funcs.misc import paginate_modules
 from MadBoi.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [ROMEO-3.0](https://telegra.ph/file/90e0bceeaf40b4a16f672.jpg)
+Hello there, I'm [ROMEO-3.0](https://telegra.ph/file/f96a2b34ddecce4ad1417.jpg)
 I am a Superb Group Management Bot.
 ✪ Make sure you read *INFO* Section Below ✪ 
 """
@@ -74,12 +74,12 @@ buttons = [
         InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),
     ],
     [
-        InlineKeyboardButton(text="❓ Help & Commands ❓", callback_data="help_back"),
+        InlineKeyboardButton(text="❓ Help & Commands ❔", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
             text="💫 Invite Romeo-3.0 to your Group 💫",
-            url="t.me/Romeo3_Bot?startgroup=true",
+            url="t.me/Romeov3Bot?startgroup=true",
         ),
     ],
 ]
@@ -352,7 +352,7 @@ def MadBoi_about_callback(update, context):
     if query.data == "aboutmanu_":
         query.message.edit_text(
             text=f"*😍 Hi again!  The name's *{dispatcher.bot.first_name}* 😍 \n\nAs  You know I'm a next Generation Group Moderator..*"
-            f"\n🧑‍💻 DEVELOPER 🧑‍💻 *-->* @Warning_MadBoy_is_Here"
+            f"\n🧑‍💻 DEVELOPER 🧑‍💻 *-->* [MADBOY](https://t.me/Warning_MadBoy_is_Here)"
             f"\n\n🔥 Join [Romeo Support](https://t.me/Romeo_JulietBotSupport) To Keep Yourself Updated About *{dispatcher.bot.first_name}* 🔥"
             f"\n\nI have the normal GROUP MANAGING functions like flood control, A Warning System etc., but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
             f"\n\nI can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/f96a2b34ddecce4ad1417.jpg)"
@@ -363,7 +363,7 @@ def MadBoi_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="How To Use Me", callback_data="aboutmanu_howto"
+                            text="How To Use Me ❓", callback_data="aboutmanu_howto"
                         ),
                         InlineKeyboardButton(
                             text="T & C", callback_data="aboutmanu_tac"
@@ -371,7 +371,7 @@ def MadBoi_about_callback(update, context):
                     ],
                     [
                         InlineKeyboardButton(
-                            text="❔Help & Commands", callback_data="help_back"
+                            text="❔ Help & Commands", callback_data="help_back"
                         )
                     ],
                     [InlineKeyboardButton(text="«« Back", callback_data="aboutmanu_back")],
@@ -398,10 +398,10 @@ def MadBoi_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Admins Settings", callback_data="aboutmanu_permis"
+                            text="Admins Settings ⚙️", callback_data="aboutmanu_permis"
                         ),
                         InlineKeyboardButton(
-                            text="Anti Spam", callback_data="aboutmanu_spamprot"
+                            text="Anti-Spam", callback_data="aboutmanu_spamprot"
                         ),
                     ],
                     [InlineKeyboardButton(text="«« Back", callback_data="aboutmanu_")],
@@ -706,7 +706,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings",
+                                text="Settings ⚙️",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
@@ -766,7 +766,7 @@ def is_chat_allowed(update, context):
         chat_id = update.effective_message.chat_id
         if chat_id in BL_CHATS:
             context.bot.send_message(
-                chat_id=update.message.chat_id, text="Unallowed chat, leaving"
+                chat_id=update.message.chat_id, text="Unallowed chat, Leaving..."
             )
             try:
                 context.bot.leave_chat(chat_id)

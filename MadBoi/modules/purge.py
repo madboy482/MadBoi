@@ -32,8 +32,8 @@ async def purge(event):
 
     if not await is_administrator(
         user_id=event.sender_id, message=event
-    ) and event.sender_id not == okay:
-        await event.reply("You're not an Admin!🙄🙄")
+    ) and event.from_id not in [1087968824]:
+        await event.reply("You're Not An Admin!")
         return
 
     msg = await event.get_reply_message()
@@ -57,7 +57,7 @@ async def purge(event):
         await event.client.delete_messages(chat, msgs)
         time_ = time.perf_counter() - start
         del_res = await event.client.send_message(
-            event.chat_id, f"Purged {count} Messages In {time_:0.2f} Secs.\n✅✅"
+            event.chat_id, f"Purged {count} Messages In {time_:0.2f} Secs.✅✅"
         )
 
         await asyncio.sleep(4)
@@ -78,17 +78,17 @@ async def delete_messages(event):
 
     if not await user_is_admin(
         user_id=event.sender_id, message=event
-    ) and event.sender_id not == okay:
-        await event.reply("Only Admins are allowed to use this command.😗")
+    ) and event.from_id not in [1087968824]:
+        await event.reply("Only Admins are allowed to use this command..")
         return
 
     if not await can_delete_messages(message=event):
-        await event.reply("Can't seem to delete this?🤧🤧")
+        await event.reply("Can't seem to delete this?")
         return
 
     message = await event.get_reply_message()
     if not message:
-        await event.reply("Whadya want to delete?🤔🤔")
+        await event.reply("Whadya want to delete??")
         return
     chat = await event.get_input_chat()
     del_message = [message, event.message]

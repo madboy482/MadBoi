@@ -98,7 +98,7 @@ def _check_member(client, message):
             except UserNotParticipant:
                 try:
                     sent_message = message.reply_text(
-                        "Hey  *{}*\n\n**🙏 Please Join @{} Channel** 😭\n and Press**UNMUTE ME** Button to get unmuted and chat.\n\n**[👉 OUR CHANNEL 👈](https://t.me/{})**".format(
+                        "Hey **{}**\n\n**Please Join @{} Channel** to be able to chat in this group..\nAfter Joining press **UnMute Me** Button to get unmuted and chat..\n\n**[👉 OUR CHANNEL 👈](https://t.me/{})**".format(
                             message.from_user.mention, channel, channel
                         ),
                         disable_web_page_preview=True,

@@ -38,7 +38,7 @@ def promote(update: Update, context: CallbackContext) -> str:
 
     if (
         not (promoter.can_promote_members or promoter.status == "creator")
-        and not user.id == okay
+        and not user.id in DRAGONS:
     ):
         message.reply_text("You don't have the necessary rights to do that!")
         return
@@ -96,8 +96,8 @@ def promote(update: Update, context: CallbackContext) -> str:
     log_message = (
         f"<b>{html.escape(chat.title)}:</b>\n"
         f"#PROMOTED\n"
-        f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-        f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
+        f"<b>➥ Admin:</b> {mention_html(user.id, user.first_name)}\n"
+        f"<b>➥ User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
     )
 
     return log_message
@@ -164,8 +164,8 @@ def demote(update: Update, context: CallbackContext) -> str:
         log_message = (
             f"<b>{html.escape(chat.title)}:</b>\n"
             f"#DEMOTED\n"
-            f"<b>Admin:</b> {mention_html(user.id, user.first_name)}\n"
-            f"<b>User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
+            f"<b>➥ Admin:</b> {mention_html(user.id, user.first_name)}\n"
+            f"<b>➥ User:</b> {mention_html(user_member.user.id, user_member.user.first_name)}"
         )
 
         return log_message
@@ -289,7 +289,7 @@ def pin(update: Update, context: CallbackContext) -> str:
         log_message = (
             f"<b>{html.escape(chat.title)}:</b>\n"
             f"#PINNED\n"
-            f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}"
+            f"<b>➥ Admin:</b> {mention_html(user.id, html.escape(user.first_name))}"
         )
 
         return log_message
@@ -316,7 +316,7 @@ def unpin(update: Update, context: CallbackContext) -> str:
     log_message = (
         f"<b>{html.escape(chat.title)}:</b>\n"
         f"#UNPINNED\n"
-        f"<b>Admin:</b> {mention_html(user.id, html.escape(user.first_name))}"
+        f"<b>➥ Admin:</b> {mention_html(user.id, html.escape(user.first_name))}"
     )
 
     return log_message
@@ -454,6 +454,9 @@ def adminlist(update, context):
     text += "\n🤖 Bots:"
     for each_bot in bot_admin_list:
         text += "\n<code> • </code>{}".format(each_bot)
+        text += "\n\n"
+        
+    text += "\n<b><i>List of Group Admins from ROMEO-3.0 DataBase✅...</i></b>"
 
     try:
         msg.edit_text(text, parse_mode=ParseMode.HTML)

@@ -36,10 +36,8 @@ def promote(update: Update, context: CallbackContext) -> str:
 
     promoter = chat.get_member(user.id)
 
-    if (
-        not (promoter.can_promote_members or promoter.status == "creator")
-        and not user.id in DRAGONS:
-    ):
+     if not (promoter.can_promote_members or
+             promoter.status == "creator") and not user.id in DRAGONS:
         message.reply_text("You don't have the necessary rights to do that!")
         return
 

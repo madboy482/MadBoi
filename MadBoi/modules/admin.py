@@ -36,8 +36,8 @@ def promote(update: Update, context: CallbackContext) -> str:
 
     promoter = chat.get_member(user.id)
 
-     if not (promoter.can_promote_members or
-             promoter.status == "creator") and not user.id in DRAGONS:
+    if not (promoter.can_promote_members or
+            promoter.status == "creator") and not user.id in DRAGONS:
         message.reply_text("You don't have the necessary rights to do that!")
         return
 
@@ -54,12 +54,14 @@ def promote(update: Update, context: CallbackContext) -> str:
     except:
         return
 
-    if user_member.status == "administrator" or user_member.status == "creator":
-        message.reply_text("How am I meant to promote someone that's already an admin?")
+    if user_member.status == 'administrator' or user_member.status == 'creator':
+        message.reply_text(
+            "How am I meant to promote someone that's already an admin?")
         return
 
     if user_id == bot.id:
-        message.reply_text("I can't promote myself! Get an admin to do it for me.")
+        message.reply_text(
+            "I can't promote myself! Get an admin to do it for me.")
         return
 
     # set same perms as bot - bot can't assign higher perms than itself!

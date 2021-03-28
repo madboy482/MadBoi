@@ -29,7 +29,7 @@ import re, os
 from MadBoi.events import register
 from MadBoi import telethn as tbot
 from MadBoi import telethn as tgbot
-ROMEOv3 = "https://telegra.ph/file/f96a2b34ddecce4ad1417.jpg"
+ROMEOv3 = "https://telegra.ph/file/bd121828f050a8ea4d783.jpg"
 @register(pattern=("/alive"))
 async def awake(event):
   madboy = event.sender.first_name

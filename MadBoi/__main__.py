@@ -64,7 +64,7 @@ from MadBoi.modules.helper_funcs.misc import paginate_modules
 from MadBoi.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-Hello there, I'm [ROMEO-3.0](https://telegra.ph/file/f96a2b34ddecce4ad1417.jpg)
+Hello there, I'm [ROMEO-3.0](https://telegra.ph/file/d94c6b3c9f05b230126b1.jpg)
 I am a Superb Group Management Bot.
 ✪ Make sure you read *INFO* Section Below ✪ 
 """
@@ -86,7 +86,7 @@ buttons = [
 
 
 HELP_STRINGS = f"""
-*Main Commands :* [ROMEO-3.0](https://telegra.ph/file/90e0bceeaf40b4a16f672.jpg)
+*Main Commands :* [ROMEO-3.0](https://telegra.ph/file/c13f3ba12fd63abb48aa6.jpg)
 ✪ /start: Starts me! You've probably already used this.
 ✪ /help: Click this, I'll let you know about myself!
 ✪ /settings: 
@@ -355,7 +355,7 @@ def MadBoi_about_callback(update, context):
             f"\n🧑‍💻 DEVELOPER 🧑‍💻 *-->* [MADBOY](https://t.me/Warning_MadBoy_is_Here)"
             f"\n\n🔥 Join [Romeo Support](https://t.me/Romeo_JulietBotSupport) To Keep Yourself Updated About *{dispatcher.bot.first_name}* 🔥"
             f"\n\nI have the normal GROUP MANAGING functions like flood control, A Warning System etc., but I mainly have the advanced and handy Antispam system and the SIBYL banning system which safegaurds and helps your group from spammers."
-            f"\n\nI can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/f96a2b34ddecce4ad1417.jpg)"
+            f"\n\nI can Manage Your Groups Smoothly, With Some Special Features [:)](https://telegra.ph/file/0e6dc52f4b6ebdb19766a.jpg)"
             f"\n\n👇 You Can Know More About Me By Clicking The Below Buttons 👇",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,

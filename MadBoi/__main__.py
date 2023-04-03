@@ -111,6 +111,14 @@ USER_SETTINGS = {}
 
 GDPR = []
 
+from MadBoi.modules import ALL_MODULES
+from MadBoi.modules.helper_funcs.alternate import typing_action
+from MadBoi.modules.helper_funcs.chat_status import is_user_admin
+from MadBoi.modules.helper_funcs.misc import paginate_modules
+from MadBoi.modules.helper_funcs.readable_time import get_readable_time
+
+from MadBoi.modules import *
+
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("MadBoi.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):

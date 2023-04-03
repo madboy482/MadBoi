@@ -1,5 +1,6 @@
 future
 bs4
+httpx==0.23.3
 telegraph
 search_engine_parser
 emoji

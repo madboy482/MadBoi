@@ -25,7 +25,7 @@
 # +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+    +-+ +-+ +-+ +-+ +-+ +-+ +-+
 
 
-from MadBoy import bot
+from MadBoi import telethn as bot
 import os
 import re
 import urllib

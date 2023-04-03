@@ -5,7 +5,7 @@ search_engine_parser
 emoji
 secureme
 lxml
-gitpython==3.1.11
+gitpython==3.1.31
 heroku3==5.2.0
 beautifulsoup4
 requests
